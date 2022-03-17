@@ -10,11 +10,11 @@ export default function Question({ display, pergunta, resposta }) {
                 <ion-icon name="play-outline" onClick={() => setShowQuestion(true)}></ion-icon>
             </div >
         );
-    } else if (showQuestion) {
-        return (
-            <div className="tela2__question">
-                <p>{pergunta}</p>
-            </div >
-        );
     }
+
+    return (
+        <div className="tela2__question">
+            <p>{pergunta}</p>
+        </div >
+    );
 }
