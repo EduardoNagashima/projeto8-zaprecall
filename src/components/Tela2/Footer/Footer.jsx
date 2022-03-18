@@ -4,10 +4,7 @@ import { useState } from "react";
 export default function Footer({ counter, sequencia }) {
     let win = true;
 
-    const [array, setArray] = useState([]);
-
     function convert(el) {
-        console.log(el)
         if (el === 'red') {
             win = false;
             return <ion-icon name="close-circle-sharp"></ion-icon>
@@ -27,10 +24,7 @@ export default function Footer({ counter, sequencia }) {
             <div className="tela2__score">
                 <p>{counter}/8 CONCLUÍDOS</p>
                 <div>
-                    {array.map((el) => {
-                        setArray([...array, sequencia]);
-                        convert(el);
-                    })}
+                    {sequencia.map(el => convert(el))}
                 </div>
             </div>
         </div>
@@ -43,14 +37,10 @@ export default function Footer({ counter, sequencia }) {
             </div>
             {win ? winMsg.msg : loseMsg.msg}
             <div className="tela2__ionIcon">
-                {array.map((el) => {
-                    setArray([...array, sequencia]);
-                    convert(el);
-                })}
+                {sequencia.map(el => convert(el))}
             </div>
         </div>
 
     { counter !== 8 ? p = p : p = resultMsg }
-
     return p;
 }

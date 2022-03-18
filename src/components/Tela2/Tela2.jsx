@@ -32,7 +32,9 @@ export default function Tela2() {
           })
         }
       </div>
-      <Footer counter={counter} sequencia={sequencia} />
+      <Footer
+        counter={counter}
+        sequencia={sequencia} />
 
     </div>
   );
