@@ -4,7 +4,6 @@ import Tela2 from "./Tela2/Tela2";
 
 export default function App() {
     const [game, setGame] = useState(false);
-    console.log(game);
 
     function handleClick(value) {
         setGame(value);

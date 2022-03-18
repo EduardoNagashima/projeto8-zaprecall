@@ -1,26 +1,24 @@
 import "./style.css"
 import { useState } from "react";
 
-export default function Question({ index, pergunta, resposta, callback }) {
+export default function Question({ index, pergunta, resposta, callback, sequencia }) {
     const [showQuestion, setShowQuestion] = useState(0);
-    let [color, setColor] = useState('');
+    const [color, setColor] = useState('');
 
     function selectedCard(cor) {
         setShowQuestion(showQuestion + 1);
-        setColor(color = cor);
+        setColor(cor);
+        sequencia(cor);
         callback(1);
     }
 
     function ionColor() {
-        const red = <ion-icon name="close-circle-sharp"></ion-icon>
-        const orange = <ion-icon name="help-circle"></ion-icon>
-        const green = <ion-icon name="checkmark-circle"></ion-icon>
         if (color === 'red') {
-            return red;
+            return <ion-icon name="close-circle-sharp"></ion-icon>
         } else if (color === 'orange') {
-            return orange;
+            return <ion-icon name="help-circle"></ion-icon>
         } else {
-            return green;
+            return <ion-icon name="checkmark-circle"></ion-icon>
         }
     }
 
