@@ -9,24 +9,24 @@ export default function Tela2() {
 
   perguntas.sort(() => Math.random() - 0.5);
 
-  const score = [{ miss: <ion-icon name="close-circle-sharp"></ion-icon> }, { close: <ion-icon name="help-circle"></ion-icon> }, { correct: <ion-icon name="checkmark-circle"></ion-icon> }];
-
   const [counter, setCounter] = useState(0);
+
+  function addCounter() {
+    setCounter(counter + 1);
+  }
 
   return (
     <div className="tela2">
       <Header />
-
       {
         perguntas.map(({ pergunta, resposta }, index) => {
           return (
-            <Question index={index + 1} pergunta={pergunta} resposta={resposta} />
+            <Question index={index + 1} pergunta={pergunta} resposta={resposta} addCounter={addCounter} />
           );
         })
       }
 
-      <Footer />
-
+      <Footer counter={counter} />
     </div>
   );
 }

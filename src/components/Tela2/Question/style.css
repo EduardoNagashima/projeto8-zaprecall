@@ -95,3 +95,18 @@
     border-radius: 5px;
     border: none;
 }
+
+.tela2__question .red, [name="close-circle-sharp"] {
+    text-decoration: line-through;
+    color: #FF3030;
+}
+
+.tela2__question .orange, [name="help-circle"] {
+    text-decoration: line-through;
+    color: #FF922E;
+}
+
+.tela2__question .green, [name="checkmark-circle"] {
+    text-decoration: line-through;
+    color: #2FBE34;
+}
