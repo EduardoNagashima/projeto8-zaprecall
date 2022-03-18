@@ -18,14 +18,15 @@ export default function Tela2() {
   return (
     <div className="tela2">
       <Header />
-      {
-        perguntas.map(({ pergunta, resposta }, index) => {
-          return (
-            <Question index={index + 1} pergunta={pergunta} resposta={resposta} addCounter={addCounter} />
-          );
-        })
-      }
-
+      <div className="tela2__questions">
+        {
+          perguntas.map(({ pergunta, resposta }, index) => {
+            return (
+              <Question index={index + 1} pergunta={pergunta} resposta={resposta} callback={(contagem) => setCounter(counter + contagem)} />
+            );
+          })
+        }
+      </div>
       <Footer counter={counter} />
     </div>
   );
