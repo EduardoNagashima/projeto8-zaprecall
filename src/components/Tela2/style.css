@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+* {
+    --mono: "MONO"0;
+    --casl: "CASL"1;
+    --slnt: "slnt"0;
+    --CRSV: "CRSV"0.5;
+    font-variation-settings: var(--mono), var(--casl), 700, var(--slnt), var(--CRSV);
+}
 
 .tela2 {
     background-color: #FB6B6B;
@@ -52,6 +59,78 @@
     font-size: 12px;
     font-weight: 700;
     padding: 10px;
+}
+
+.tela2__question--yellow {
+    width: 182px;
+    height: 80px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tela2__question--yellow--turned {
+    width: 182px;
+    height: 100%;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tela2__question--yellow p, .tela2__question--yellow--turned p {
+    margin: 13px 0 0 6px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.tela2__question--yellow .tela2__turnArrow {
+    position: absolute;
+    width: 18px;
+    bottom: 7px;
+    right: 8px;
+}
+
+.tela2__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+}
+
+.tela2__buttons button {
+    width: 55px;
+    height: 24px;
+    border-radius: 5px;
+    font-size: 7px;
+    color: #FFFFFF;
+}
+
+.tela2__buttons .red {
+    background: #FF3030;
+    border-radius: 5px;
+    border: none;
+}
+
+.tela2__buttons .orange {
+    background: #FF922E;
+    border-radius: 5px;
+    border: none;
+}
+
+.tela2__buttons .green {
+    background: #2FBE34;
+    border-radius: 5px;
+    border: none;
 }
 
 .tela2__footer {

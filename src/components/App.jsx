@@ -14,7 +14,6 @@ export default function App() {
         <>
             {!game && <Tela1 handleClick={handleClick} />}
             {game && <Tela2 />}
-
         </>
     );
 }
