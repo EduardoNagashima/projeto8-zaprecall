@@ -5,7 +5,7 @@
 }
 
 .tela1 {
-    width: 375px;
+    min-width: 375px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -49,4 +49,10 @@
     font-size: 18px;
     text-align: center;
     color: #D70900;
+}
+
+@media (min-width: 426px) {
+    .tela1 {
+        width: 100%;
+    }
 }

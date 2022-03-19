@@ -13,9 +13,16 @@
 .tela2 {
     background-color: #FB6B6B;
     margin: 0 auto;
-    width: 375px;
+    min-width: 375px;
     height: 100%;
     border: 1px solid #DBDBDB;
     font-family: 'Recursive';
     position: relative;
+}
+
+@media (min-width: 580px) {
+    .tela2 {
+        width: 100%;
+        height: 100%;
+    }
 }

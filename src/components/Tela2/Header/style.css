@@ -19,3 +19,15 @@
     font-size: 36px;
     font-weight: 400;
 }
+
+@media (min-width: 580px) {
+    .tela2__header h1 {
+        font-size: 64px;
+    }
+
+    .tela2__header img {
+        width: 86.96px;
+        height: 100px;
+        margin-right: 50px;
+    }
+}

@@ -60,3 +60,31 @@
 .tela2__ionIcon p {
     margin-bottom: 6px;
 }
+
+@media (min-width: 580px) {
+
+    .tela2__footer {
+        height: 118px;
+    }
+
+    .tela2__footer--result {
+        height: 100%;
+    }
+
+    .tela2__footer p {
+        font-size: 32px;
+    }
+
+    .tela2__ion-icons ion-icon {
+        font-size: 35px;
+    }
+
+    .tela2__footer--result p {
+        font-size: 27px;
+    }
+
+    .tela2__footer--result span {
+        font-size: 27px;
+    }
+
+}

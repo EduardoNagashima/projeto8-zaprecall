@@ -23,7 +23,7 @@ export default function Footer({ counter, sequencia }) {
         <div className="tela2__footer">
             <div className="tela2__score">
                 <p>{counter}/8 CONCLUÍDOS</p>
-                <div>
+                <div className="tela2__ion-icons">
                     {sequencia.map(el => convert(el))}
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function Footer({ counter, sequencia }) {
             {win ? winMsg.msg : loseMsg.msg}
             <div className="tela2__ionIcon">
                 <p>{counter}/8 CONCLUÍDOS</p>
-                <div>
+                <div className="tela2__ion-icons">
                     {sequencia.map(el => convert(el))}
                 </div>
             </div>
