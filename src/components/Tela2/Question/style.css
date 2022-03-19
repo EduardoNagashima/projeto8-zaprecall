@@ -6,27 +6,27 @@
 }
 
 .tela2 ion-icon {
-    font-size: 16px;
+    font-size: 28px;
 }
 
 .tela2__question {
-    width: 182px;
-    height: 40px;
+    width: 300px;
+    height: 65px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     padding: 10px;
 }
 
-.tela2__question--yellow {
-    width: 182px;
-    height: 80px;
+.tela2__question--yellow, .tela2__question--yellow--turned {
+    width: 299px;
+    height: 131px;
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -35,26 +35,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .tela2__question--yellow--turned {
-    width: 182px;
     height: 100%;
-    background: #FFFFD5;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .tela2__question--yellow p, .tela2__question--yellow--turned p {
-    margin: 13px 0 0 6px;
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 12px;
+    margin: 18px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .tela2__question--yellow .tela2__turnArrow {
@@ -67,33 +58,28 @@
 .tela2__buttons {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
 }
 
 .tela2__buttons button {
-    width: 55px;
-    height: 24px;
+    width: 86px;
+    height: 38px;
     border-radius: 5px;
-    font-size: 7px;
+    font-size: 12px;
     color: #FFFFFF;
+    border: none;
 }
 
 .tela2__buttons .red {
     background: #FF3030;
-    border-radius: 5px;
-    border: none;
 }
 
 .tela2__buttons .orange {
     background: #FF922E;
-    border-radius: 5px;
-    border: none;
 }
 
 .tela2__buttons .green {
     background: #2FBE34;
-    border-radius: 5px;
-    border: none;
 }
 
 .tela2__question .red, [name="close-circle-sharp"] {

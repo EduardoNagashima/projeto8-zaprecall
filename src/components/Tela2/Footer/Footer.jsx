@@ -37,7 +37,10 @@ export default function Footer({ counter, sequencia }) {
             </div>
             {win ? winMsg.msg : loseMsg.msg}
             <div className="tela2__ionIcon">
-                {sequencia.map(el => convert(el))}
+                <p>{counter}/8 CONCLUÍDOS</p>
+                <div>
+                    {sequencia.map(el => convert(el))}
+                </div>
             </div>
         </div>
 

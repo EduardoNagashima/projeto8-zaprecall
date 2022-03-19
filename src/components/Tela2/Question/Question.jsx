@@ -1,5 +1,6 @@
 import "./style.css"
 import { useState } from "react";
+import Setinha from "./../../../assets/setinha.png"
 
 export default function Question({ index, pergunta, resposta, callback, sequencia }) {
     const [showQuestion, setShowQuestion] = useState(0);
@@ -31,7 +32,7 @@ export default function Question({ index, pergunta, resposta, callback, sequenci
     const questionPage =
         <div className="tela2__question--yellow">
             <p>{pergunta}</p>
-            <img className="tela2__turnArrow" onClick={() => setShowQuestion(2)} src="./assets/setinha.png" alt="setinha" />
+            <img className="tela2__turnArrow" onClick={() => setShowQuestion(2)} src={Setinha} alt="setinha" />
         </div >
 
     const answerPage =

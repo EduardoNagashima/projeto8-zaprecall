@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tela1 from "./Tela1/Tela1";
 import Tela2 from "./Tela2/Tela2";
+import "./reset.css";
 
 export default function App() {
     const [game, setGame] = useState(false);

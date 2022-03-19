@@ -6,7 +6,7 @@
 
 .tela1 {
     width: 375px;
-    height: 667px;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
