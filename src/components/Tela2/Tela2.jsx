@@ -12,14 +12,6 @@ export default function Tela2() {
   const [counter, setCounter] = useState(0);
   const [sequencia, setSequencia] = useState([]);
 
-
-  function a() {
-    Live(work => <Viver jogar="{true}">{work}</Viver>);
-  }
-
-
-
-
   return (
     <div className="tela2">
 
