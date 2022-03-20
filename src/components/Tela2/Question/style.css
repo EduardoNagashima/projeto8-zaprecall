@@ -27,7 +27,7 @@
 .tela2__question--yellow, .tela2__question--yellow--turned {
     width: 299px;
     height: 131px;
-    background: #FFFFD5;
+    background: #ffffcb;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin-bottom: 10px;
@@ -36,6 +36,13 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 25px;
+    transition: transform 250ms;
+}
+
+.tela2__question--yellow:hover, .tela2__question--yellow--turned:hover {
+    transform: translateX(-20px);
+    transition-delay: 50ms;
+    border: 2px solid rgba(0, 0, 0, 0.678);
 }
 
 .tela2__question--yellow--turned {
