@@ -8,7 +8,9 @@ export default function Tela1({ handleClick }) {
         <img src={Logo} alt="logo" />
         <h1 className="tela1__logo-nome">ZapRecall</h1>
       </div>
-      <button className="tela1__startButton" onClick={() => handleClick(true)}>Iniciar Recall!</button>
+      <div className="tela1__button">
+        <button className="tela1__startButton" onClick={() => { handleClick(true); }}>Iniciar Recall!</button>
+      </div>
     </div>
   );
 }

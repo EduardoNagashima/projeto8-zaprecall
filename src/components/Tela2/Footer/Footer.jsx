@@ -1,5 +1,4 @@
-import "./style.css"
-import { useState } from "react";
+import "./style.css";
 
 export default function Footer({ counter, sequencia }) {
     let win = true;
@@ -13,6 +12,10 @@ export default function Footer({ counter, sequencia }) {
         } else if (el === "green") {
             return <ion-icon name="checkmark-circle"></ion-icon>
         }
+    }
+
+    function refresh() {
+        window.location.reload(false);
     }
 
     const winMsg = { emoji: <span>&#129395;</span>, p: <p>PARABÉNS!</p>, msg: <span>Você não esqueceu de nenhum flashcard!</span> };
@@ -41,6 +44,7 @@ export default function Footer({ counter, sequencia }) {
                 <div className="tela2__ion-icons">
                     {sequencia.map(el => convert(el))}
                 </div>
+                <button className="tela2__footer-button" onClick={() => refresh()}>Reiniciar Recall</button>
             </div>
         </div>
 

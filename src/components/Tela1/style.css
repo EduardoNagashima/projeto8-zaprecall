@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FB6B6B;
+}
+
 .tela1 {
     min-width: 375px;
     height: 100vh;
@@ -49,6 +53,11 @@
     font-size: 18px;
     text-align: center;
     color: #D70900;
+}
+
+.tela1__button {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 426px) {
